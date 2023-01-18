@@ -2,7 +2,9 @@
 {
     public interface ICard
     {
-        public string DocumentType { get; set; }
+        public PublicationType DocumentType { get; set; }
+        public int CardId { get; set; }
 
+        public void ShowCardData() { }
     }
 }
