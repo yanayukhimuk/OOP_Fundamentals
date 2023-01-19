@@ -1,0 +1,49 @@
+[
+  {
+    "type": "Book",
+    "isbn": "Huff",
+    "isActive": true,
+    "age": 59,
+    "gender": "female",
+    "eyeColor": "green",
+    "friends": [
+      "Kendra Buck"
+    ]
+  },
+  {
+    "firstName": "Diann",
+    "lastName": "Patrick",
+    "isActive": true,
+    "age": 45,
+    "gender": "female",
+    "eyeColor": "blue",
+    "friends": [
+      "Roach Mills",
+      "Diaz Pickett"
+    ]
+  },
+  {
+    "firstName": "Holt",
+    "lastName": "Erickson",
+    "isActive": false,
+    "age": 53,
+    "gender": "male",
+    "eyeColor": "brown",
+    "friends": [
+      "Lindsay Wyatt",
+      "Freeman Mcfadden",
+      "Matilda Franklin"
+    ]
+  },
+  {
+    "firstName": "Crystal",
+    "lastName": "Santiago",
+    "isActive": false,
+    "age": 31,
+    "gender": "female",
+    "eyeColor": "brown",
+    "friends": [
+      "Stacy Joseph"
+    ]
+  }
+]

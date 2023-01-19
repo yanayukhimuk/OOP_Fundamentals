@@ -11,4 +11,6 @@
     <ProjectReference Include="..\Project_Library\Project_Library.csproj" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
 </Project>

@@ -1,4 +1,6 @@
-﻿namespace Project_Library
+﻿using System.Xml.Serialization;
+
+namespace Project_Library
 {
     internal class Book : IPublication
     {
