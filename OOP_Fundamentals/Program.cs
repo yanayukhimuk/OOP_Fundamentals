@@ -28,7 +28,7 @@ namespace OOP_Fundamentals
             library.UploadFiles(list, commonContainer);
 
             List<Book> LibBooks = library.LoadBooks(bookContainer);
-            List<Patent> patens = library.LoadPatents("");
+            //List<Patent> patens = library.LoadPatents("");
         }
     }
 }
