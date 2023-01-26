@@ -2,7 +2,7 @@
 
 namespace Project_Library
 {
-    internal class Book : IPublication
+    public class Book : IPublication
     {
         public int? _ISBN;
         public string? _publisher;

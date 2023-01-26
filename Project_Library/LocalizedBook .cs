@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_Library
 {
-    internal class LocalizedBook : IPublication
+    public class LocalizedBook : IPublication
     {
         public int? _ISBN;
         public string? _originalPublisher;

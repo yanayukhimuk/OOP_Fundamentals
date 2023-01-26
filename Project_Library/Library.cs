@@ -2,37 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace Project_Library
 {
-    internal class Library
+    public class Library
     {
+        string path;
         public List<IPublication> LibraryContent;
 
-        public Library()
+        public Library(string path)
         {
-            LibraryContent = LoadFiles();
+            this.path = path;
+            LibraryContent = LoadFiles(path);
         }
 
         public List<IPublication> LoadFiles(string path)
         {
-            List<IPublication> fileList = new List<IPublication>();
-            XmlSerializer serializer = new XmlSerializer(type);
-            using (FileStream fs = new FileStream(path, FileMode.Open))
-            {
-                try
-                {
-                    fileList = (List<IPublication>)serializer.Deserialize(fs);
-                    fs.Close();
-                }
-                catch (Exception e)
-                {
-                    throw new InvalidOperationException("The action cannot be performed");
-                }
-            }
-            return fileList;
+            string text = File.ReadAllText(path);
+            var content = JsonSerializer.Deserialize<List<IPublication>>(text);
+            return content;
         }
         public void SearchForDocument(int number)
         {

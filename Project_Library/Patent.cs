@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_Library
 {
-    internal class Patent : IPublication
+    public class Patent : IPublication
     {
         public DateTime _expirationDate;
         public int Id { get;}

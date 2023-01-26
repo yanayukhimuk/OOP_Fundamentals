@@ -6,11 +6,9 @@ namespace OOP_Fundamentals
     {
         static void Main(string[] args)
         {
-            Library library = new Library();
-
-            List<Book> books = new List<Book>();
-
-            books = library.GetBooks();
+            string path = "";
+            Library library = new(path);
+            List<Book> books = library.GetAllBooks();
         }
     }
 }
