@@ -13,14 +13,40 @@ namespace Project_Library
             this.path = path;
         }
 
-        public List<Book> LoadBooks(string path)
+        public List<BookJson> LoadBooks(string path)
         {
-            List<Book> list;
+            List<BookJson> list;
 
             using (StreamReader reader = new StreamReader(path))
             {
                 string json = reader.ReadToEnd();
-                list = JsonConvert.DeserializeObject<List<Book>>(json);
+                list = JsonConvert.DeserializeObject<List<BookJson>>(json);
+                reader.Close();
+            }
+            return list;
+        }
+
+        public List<PatentJson> LoadPatents(string path)
+        {
+            List<PatentJson> list;
+
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string json = reader.ReadToEnd();
+                list = JsonConvert.DeserializeObject<List<PatentJson>>(json);
+                reader.Close();
+            }
+            return list;
+        }
+
+        public List<LocalizedBookJson> LoadLocalizedBooks(string path)
+        {
+            List<LocalizedBookJson> list;
+
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string json = reader.ReadToEnd();
+                list = JsonConvert.DeserializeObject<List<LocalizedBookJson>>(json);
                 reader.Close();
             }
             return list;
@@ -38,9 +64,9 @@ namespace Project_Library
             }
         }
 
-        public void SearchForDocument(int number)
+        public Book SearchForDocument(string name, List<Book> books)
         {
-
+            return (Book)books.Select(b => b.Title == name);  
         }
 
         public List<Book> GetAllBooks()

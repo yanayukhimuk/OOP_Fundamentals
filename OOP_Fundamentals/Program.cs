@@ -10,6 +10,8 @@ namespace OOP_Fundamentals
             DateTime expdate = DateTime.Now.AddDays(-100);
             string commonContainer = "C:\\Users\\Yana_Yukhimuk\\source\\repos\\OOP_Fundamentals\\OOP_Fundamentals\\UploadFiles.json";
             string bookContainer = @"C:\Users\Yana_Yukhimuk\source\repos\OOP_Fundamentals\OOP_Fundamentals\books.json";
+            string localizedBookContainer = @"C:\Users\Yana_Yukhimuk\source\repos\OOP_Fundamentals\OOP_Fundamentals\localizedBooks.json";
+            string patentContainer = @"C:\Users\Yana_Yukhimuk\source\repos\OOP_Fundamentals\OOP_Fundamentals\patents.json";
 
             List<IPublication> list = new List<IPublication>();
             Book book1 = new Book(111, "Publisher_1", 01, date, PublicationType.Book, 56, "My Book", "My Author");
@@ -27,8 +29,10 @@ namespace OOP_Fundamentals
             Library library = new(commonContainer);
             library.UploadFiles(list, commonContainer);
 
-            List<Book> LibBooks = library.LoadBooks(bookContainer);
-            //List<Patent> patens = library.LoadPatents("");
+            List<BookJson> LibBooks = library.LoadBooks(bookContainer);
+            List<PatentJson> patens = library.LoadPatents(patentContainer);
+            List<LocalizedBookJson> localBooks = library.LoadLocalizedBooks(localizedBookContainer);
+
         }
     }
 }
