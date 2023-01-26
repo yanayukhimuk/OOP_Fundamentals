@@ -1,0 +1,38 @@
+[
+  {
+    "book": {
+      "ISBN": 111,
+      "Publisher": "Publisher_1",
+      "Id": 1,
+      "DatePublished": "2023-01-26T13:54:54.0433922+03:00",
+      "Type": 2,
+      "PagesCount": 56,
+      "Title": "My Book",
+      "Author": "My Author"
+    }
+  },
+  {
+    "book": {
+    "ISBN": 222,
+    "Publisher": "Publisher_1",
+    "Id": 2,
+    "DatePublished": "2023-01-26T13:54:54.0433922+03:00",
+    "Type": 2,
+    "PagesCount": 156,
+    "Title": "My Book 2",
+    "Author": "My Author 2"
+  }
+  },
+  {
+    "book": {
+      "ISBN": 333,
+      "Publisher": "Publisher_1",
+      "Id": 3,
+      "DatePublished": "2023-01-26T13:54:54.0433922+03:00",
+      "Type": 2,
+      "PagesCount": 256,
+      "Title": "My Book 3",
+      "Author": "My Author 3"
+    }
+  }
+]

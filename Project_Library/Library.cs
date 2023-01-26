@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
+﻿using Newtonsoft.Json;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Project_Library
 {
@@ -16,15 +11,33 @@ namespace Project_Library
         public Library(string path)
         {
             this.path = path;
-            LibraryContent = LoadFiles(path);
         }
 
-        public List<IPublication> LoadFiles(string path)
+        public List<Book> LoadBooks(string path)
         {
-            string text = File.ReadAllText(path);
-            var content = JsonSerializer.Deserialize<List<IPublication>>(text);
-            return content;
+            List<Book> list;
+
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string json = reader.ReadToEnd();
+                list = JsonConvert.DeserializeObject<List<Book>>(json);
+                reader.Close();
+            }
+            return list;
         }
+
+        public void UploadFiles(List<IPublication> files, string path)
+        {
+            using (StreamWriter sw = File.CreateText(@"C:\Users\Yana_Yukhimuk\source\repos\OOP_Fundamentals\OOP_Fundamentals\UploadFiles.json"))
+            {
+                foreach (var file in files)
+                {
+                    Newtonsoft.Json.JsonSerializer serializer = new Newtonsoft.Json.JsonSerializer();
+                    serializer.Serialize(sw, file);
+                }
+            }
+        }
+
         public void SearchForDocument(int number)
         {
 

@@ -1,0 +1,35 @@
+[
+  {
+    "patent": {
+      "ExpirationDate": "2023-01-26T14:33:29.2899267+03:00",
+      "Id": 4,
+      "DatePublished": "2022-10-18T14:33:29.2938732+03:00",
+      "Type": 3,
+      "PagesCount": 3,
+      "Title": "My Patent",
+      "Author": "Kate"
+    }
+  },
+  {
+    "patent": {
+      "ExpirationDate": "2023-01-26T14:33:29.2899267+03:00",
+      "Id": 44,
+      "DatePublished": "2022-10-18T14:33:29.2938732+03:00",
+      "Type": 3,
+      "PagesCount": 3,
+      "Title": "My Patent 2",
+      "Author": "Kate"
+    }
+  },
+  {
+    "patent": {
+      "ExpirationDate": "2023-01-26T14:33:29.2899267+03:00",
+      "Id": 43,
+      "DatePublished": "2022-10-18T14:33:29.2938732+03:00",
+      "Type": 3,
+      "PagesCount": 3,
+      "Title": "My Patent 3",
+      "Author": "Kate"
+    }
+  }
+]
