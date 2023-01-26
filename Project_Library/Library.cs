@@ -11,12 +11,12 @@ namespace Project_Library
     {
         public List<IPublication> LibraryContent;
 
-        public Library(List<IPublication> libraryContent)
+        public Library()
         {
-            LibraryContent = libraryContent;
+            LibraryContent = LoadFiles();
         }
 
-        public List<IPublication> LoadFiles(Type type, string path)
+        public List<IPublication> LoadFiles(string path)
         {
             List<IPublication> fileList = new List<IPublication>();
             XmlSerializer serializer = new XmlSerializer(type);
@@ -37,6 +37,11 @@ namespace Project_Library
         public void SearchForDocument(int number)
         {
 
+        }
+
+        public List<Book> GetAllBooks()
+        {
+            return LibraryContent.Where(t => t.Type == PublicationType.Book).Cast<Book>().ToList();
         }
     }
 }

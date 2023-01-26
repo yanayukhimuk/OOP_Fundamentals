@@ -1,49 +1,65 @@
 [
   {
-    "type": "Book",
-    "isbn": "Huff",
-    "isActive": true,
-    "age": 59,
-    "gender": "female",
-    "eyeColor": "green",
-    "friends": [
-      "Kendra Buck"
-    ]
+    "Type": "Book",
+    "Publisher":  "Publisher_1",
+    "Id": "1",
+    "DatePublished": "11/11/1995",
+    "PagesCount": 59,
+    "Title": "My Book",
+    "Author": "Me",
+    "ISBN": "11111"
   },
   {
-    "firstName": "Diann",
-    "lastName": "Patrick",
-    "isActive": true,
-    "age": 45,
-    "gender": "female",
-    "eyeColor": "blue",
-    "friends": [
-      "Roach Mills",
-      "Diaz Pickett"
-    ]
+    "Type": "Book",
+    "Publisher": "Publisher_1",
+    "Id": "2",
+    "DatePublished": "12/12/1995",
+    "PagesCount": 56,
+    "Title": "My Book 2",
+    "Author": "Me",
+    "ISBN":  "22222"
   },
   {
-    "firstName": "Holt",
-    "lastName": "Erickson",
-    "isActive": false,
-    "age": 53,
-    "gender": "male",
-    "eyeColor": "brown",
-    "friends": [
-      "Lindsay Wyatt",
-      "Freeman Mcfadden",
-      "Matilda Franklin"
-    ]
+    "Type": "Book",
+    "Publisher": "Publisher_1",
+    "Id": "3",
+    "DatePublished": "12/12/1996",
+    "PagesCount": 79,
+    "Title": "My Book 3",
+    "Author": "Me",
+    "ISBN": "33333"
   },
   {
-    "firstName": "Crystal",
-    "lastName": "Santiago",
-    "isActive": false,
-    "age": 31,
-    "gender": "female",
-    "eyeColor": "brown",
-    "friends": [
-      "Stacy Joseph"
-    ]
+    "Type": "LocalizedBook",
+    "LocalPublisher": "Publisher_1",
+    "OriginalPublisher": "Publisher_2",
+    "Country": "Belarus",
+    "Id": "4",
+    "DatePublished": "12/12/1995",
+    "PagesCount": 159,
+    "Title": "My Book 4",
+    "Author": "Me 2",
+    "ISBN": "44444"
+  },
+  {
+    "Type": "LocalizedBook",
+    "LocalPublisher": "Publisher_1",
+    "OriginalPublisher": "Publisher_2",
+    "Country": "Belarus",
+    "Id": "5",
+    "DatePublished": "12/12/1995",
+    "PagesCount": 159,
+    "Title": "My Book 5",
+    "Author": "Me 2",
+    "ISBN": "55555"
+  },
+  {
+    "Type": "Patent",
+    "Id": "6",
+    "ExpirationDate": "12/12/2023",
+    "DatePublished": "12/12/1995",
+    "PagesCount": 9,
+    "Title": "My Patent",
+    "Author": "Me"
   }
 ]

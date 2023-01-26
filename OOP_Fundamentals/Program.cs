@@ -1,10 +1,16 @@
-﻿namespace OOP_Fundamentals
+﻿using Project_Library;
+
+namespace OOP_Fundamentals
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Library library = new Library();
+
+            List<Book> books = new List<Book>();
+
+            books = library.GetBooks();
         }
     }
 }

@@ -37,5 +37,11 @@ namespace Project_Library
             Title = title;
             Author = author;
         }
+
+        public BookCardDTO ShowData()
+        {
+            return new BookCardDTO(Id, Title);
+            //return String.Format("Publication Type: {0}, Id: {1}, Title: {2}, Date published: {3}, Author: {4}, ISBN: {5}, Publisher: {6}, Pages count: {7}", Type, Id, Title, DatePublished, Author, _ISBN, _publisher, PagesCount);
+        }
     }
 }

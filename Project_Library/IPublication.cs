@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Project_Library
-{
-    public enum PublicationType { Misc, Book, Magazine, Article };
+{ 
     public interface IPublication
     {
         public int Id { get; }
@@ -14,8 +13,6 @@ namespace Project_Library
         public PublicationType Type { get; }
         public int PagesCount { get; }
         public string Title { get; }
-
         public string Author { get; }
-
     }
 }
