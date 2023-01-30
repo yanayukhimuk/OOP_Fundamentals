@@ -8,7 +8,7 @@ namespace Project_Library
 { 
     public interface IPublication
     {
-        public int Id { get; }
+        public Guid Id { get; }
         public DateTime DatePublished { get; }
         public PublicationType Type { get; }
         public int PagesCount { get; }

@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Project_Library
 {
-    public record BookCardDTO(int ID, string name);
+    public record BookCardDTO(Guid ID, string name);
     public record PatentCardDTO();
 }

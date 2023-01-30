@@ -1,44 +1,38 @@
 [
   {
-    "localized_book": {
-      "ISBN": 444,
-      "OriginalPublisher": "DOM",
-      "CountryOfLocalization": "Belarus",
-      "LocalPublisher": "BelPublisher",
-      "Id": 5,
-      "DatePublished": "2023-01-26T14:33:29.2899267+03:00",
-      "Type": 0,
-      "PagesCount": 55,
-      "Title": "Local",
-      "Author": "Foreigner"
-    }
+    "ISBN": 444,
+    "OriginalPublisher": "DOM",
+    "CountryOfLocalization": "Belarus",
+    "LocalPublisher": "BelPublisher",
+    "Id": "4b7877cc-fcb5-41ad-9f14-63639b3d65d6",
+    "DatePublished": "2023-01-26T14:33:29.2899267+03:00",
+    "Type": 0,
+    "PagesCount": 55,
+    "Title": "Local",
+    "Author": "Foreigner"
   },
   {
-    "localized_book": {
-      "ISBN": 455,
-      "OriginalPublisher": "DOM",
-      "CountryOfLocalization": "Belarus",
-      "LocalPublisher": "BelPublisher",
-      "Id": 5,
-      "DatePublished": "2023-01-26T14:33:29.2899267+03:00",
-      "Type": 0,
-      "PagesCount": 55,
-      "Title": "Local 2",
-      "Author": "Foreigner"
-    }
+    "ISBN": 455,
+    "OriginalPublisher": "DOM",
+    "CountryOfLocalization": "Belarus",
+    "LocalPublisher": "BelPublisher",
+    "Id": "4b7877cc-fcb5-41ad-9f14-63639b3d65d6",
+    "DatePublished": "2023-01-26T14:33:29.2899267+03:00",
+    "Type": 0,
+    "PagesCount": 55,
+    "Title": "Local 2",
+    "Author": "Foreigner"
   },
   {
-    "localized_book": {
-      "ISBN": 445,
-      "OriginalPublisher": "DOM",
-      "CountryOfLocalization": "Belarus",
-      "LocalPublisher": "BelPublisher",
-      "Id": 5,
-      "DatePublished": "2023-01-26T14:33:29.2899267+03:00",
-      "Type": 0,
-      "PagesCount": 55,
-      "Title": "Local 3",
-      "Author": "Foreigner"
-    }
+    "ISBN": 445,
+    "OriginalPublisher": "DOM",
+    "CountryOfLocalization": "Belarus",
+    "LocalPublisher": "BelPublisher",
+    "Id": "4b7877cc-fcb5-41ad-9f14-63639b3d65d6",
+    "DatePublished": "2023-01-26T14:33:29.2899267+03:00",
+    "Type": 0,
+    "PagesCount": 55,
+    "Title": "Local 3",
+    "Author": "Foreigner"
   }
 ]
