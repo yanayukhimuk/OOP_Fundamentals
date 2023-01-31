@@ -18,10 +18,13 @@ namespace Project_Library
         {
             return Items.Select(item => item).Where(i => i.Id == id).FirstOrDefault();
         }
-
+        public Card<T> GetCardByPublicationId(Guid id)
+        {
+            return Items.Select(item => item).Where(i => i.Publication.Id == id).FirstOrDefault();
+        }
         public IEnumerable<Card<T>> GetListByAuthor(string author)
         {
-            throw new NotImplementedException();
+            return Items.Select(item => item).Where(i => i.Publication.Author == author).ToList();
         }
     }
 }
